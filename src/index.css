@@ -70,7 +70,25 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .animate-spin-react-logo {
+    @apply animate-spin;
+    animation-duration: 20s;
+  }
+}
+
+@layer utilities {
+  .drop-shadow-vite-logo {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+
+  .drop-shadow-react-logo {
+    filter: drop-shadow(0 0 2em #61dafbaa);
   }
 }
