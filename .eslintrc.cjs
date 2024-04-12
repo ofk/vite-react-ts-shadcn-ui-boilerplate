@@ -2,7 +2,14 @@ module.exports = {
   root: true,
   env: { browser: true, es2020: true },
   extends: '@ofk/eslint-config-recommend',
-  ignorePatterns: ['dist', '.eslintrc.cjs', '*.config.cjs', '*.config.ts'],
+  ignorePatterns: [
+    'dist',
+    'src/lib',
+    'src/components/ui',
+    '.eslintrc.cjs',
+    '*.config.cjs',
+    '*.config.ts',
+  ],
   parserOptions: {
     project: './tsconfig.json',
   },
